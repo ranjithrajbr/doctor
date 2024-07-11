@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <title>Welcome</title>
+</head>
+<body>
+    <div>
+        <h1 id="title"></h1>
+    </div>
+</body>
+</html>
+<style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+           
+        }
+        body{
+            background:url('background.jpg');
+            background-size: cover;
+            height: 100vh;
+           
+        }
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            padding: 140px;
+        }
+        div h1{
+            color:white;
+            font-size:3rem;
+            text-align: center;
+        }
+</style>
+<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+<script>
+    var app = document.getElementById('title');
+    var typewriter = new Typewriter(app, {
+    loop: true
+    });
+    typewriter.typeString('"Healthy skin is a reflection of overall wellness." - Dr. Murad')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('"Beautiful skin requires commitment, not a miracle." - Erno Laszlo')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('"Beauty begins the moment you decide to be yourself." - Coco Chanel')
+    .pauseFor(2500)
+    .start();
+</script>
